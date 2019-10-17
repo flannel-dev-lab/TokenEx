@@ -1,1 +1,2 @@
 # Transparent Gateway
+[![Codacy Badge](https://api.codacy.com/project/badge/Grade/41a06224f2f04d40b4c118d19b2209e0)](https://www.codacy.com/manual/vmanikes/TokenEx?utm_source=github.com&amp;utm_medium=referral&amp;utm_content=flannel-dev-lab/TokenEx&amp;utm_campaign=Badge_Grade)

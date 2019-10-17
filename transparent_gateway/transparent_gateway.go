@@ -1,3 +1,4 @@
+// transparent_gateway handles sending detokenization requests to tokenex
 package transparent_gateway
 
 import (
@@ -5,6 +6,7 @@ import (
 	"net/http"
 )
 
+// DetokenizeObject Contains all the fields needed to push data to tokenex
 type DetokenizeObject struct {
 	ContentType            string
 	DetokenizeURL          string
@@ -15,6 +17,7 @@ type DetokenizeObject struct {
 	ExternalRequestHeaders map[string]string
 }
 
+// TransparentGatewayDetokenizeRequest Sends a request to tokenex for detokenization
 func (detokenizeObject *DetokenizeObject) TransparentGatewayDetokenizeRequest() (*http.Response, error) {
 	tokenExAPIRequest, err := http.NewRequest("POST", detokenizeObject.DetokenizeURL, bytes.NewBuffer(detokenizeObject.ExternalRequestBody))
 	if err != nil {
