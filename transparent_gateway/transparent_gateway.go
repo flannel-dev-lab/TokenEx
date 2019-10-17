@@ -1,4 +1,4 @@
-// transparent_gateway handles sending detokenization requests to tokenex
+// Package transparent_gateway handles sending detokenization requests to tokenex
 package transparent_gateway
 
 import (
